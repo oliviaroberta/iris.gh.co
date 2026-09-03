@@ -1,0 +1,2 @@
+import Container from '../../components/common/Container'; import ProductGrid from '../../components/product/ProductGrid'; import SectionHeading from '../../components/common/SectionHeading'; import { products } from '../../data/products';
+export default function ShopPage() { return <section className="page-section"><Container><SectionHeading eyebrow="Shop" title="The IRIS denim wardrobe." description="A small, considered edit of premium denim styles." /><ProductGrid products={products} /></Container></section>; }

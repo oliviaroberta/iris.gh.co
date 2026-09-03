@@ -1,0 +1,6 @@
+export const products = [
+  { id: 'product-1', slug: 'kente-hem-wide-leg-jeans', name: 'Kente Hem Wide Leg Jeans', price: 650, category: 'Denim', collection: 'kente-hem', images: [], sizes: ['XS', 'S', 'M', 'L', 'XL'], colors: ['Indigo'], description: 'Signature wide-leg denim finished with a cultural statement.', featured: true, inStock: true },
+  { id: 'product-2', slug: 'light-wash-wide-leg-jeans', name: 'Light Wash Wide Leg Jeans', price: 580, category: 'Denim', collection: 'light-wash', images: [], sizes: ['XS', 'S', 'M', 'L', 'XL'], colors: ['Light Wash'], description: 'An easy wide-leg silhouette for everyday dressing.', featured: true, inStock: true },
+  { id: 'product-3', slug: 'black-tailored-denim', name: 'Black Tailored Denim', price: 620, category: 'Denim', collection: 'black-denim', images: [], sizes: ['XS', 'S', 'M', 'L', 'XL'], colors: ['Black'], description: 'Clean, structured denim with a tailored finish.', featured: false, inStock: true },
+  { id: 'product-4', slug: 'heritage-straight-cut-jeans', name: 'Heritage Straight Cut Jeans', price: 540, category: 'Denim', collection: 'wide-leg', images: [], sizes: ['XS', 'S', 'M', 'L', 'XL'], colors: ['Indigo'], description: 'A refined straight leg with subtle heritage details.', featured: false, inStock: true },
+];

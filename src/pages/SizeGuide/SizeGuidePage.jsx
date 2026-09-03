@@ -1,0 +1,2 @@
+import Container from '../../components/common/Container'; import SectionHeading from '../../components/common/SectionHeading';
+export default function SizeGuidePage() { return <section className="page-section"><Container><SectionHeading eyebrow="Size Guide" title="Find your best fit." description="A complete IRIS fit guide and measurement reference will be added with the final product range." /></Container></section>; }

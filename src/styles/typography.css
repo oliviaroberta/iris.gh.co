@@ -1,0 +1,70 @@
+
+:root {
+  --font-display: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
+  --font-body: 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(1rem, 4vw, 4.75rem);
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  letter-spacing: -0.015em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.eyebrow {
+  color: var(--color-olive);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.small-body {
+  color: var(--color-olive);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.page-copy {
+  color: var(--color-olive);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-top: var(--space-md);
+  max-width: 38rem;
+}

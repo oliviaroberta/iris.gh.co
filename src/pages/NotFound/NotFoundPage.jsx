@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'; import Container from '../../components/common/Container';
+export default function NotFoundPage() { return <main className="page-section"><Container><p className="eyebrow">404</p><h1>That page is not here.</h1><p className="page-copy">The page may have moved, or it has not been created yet.</p><Link className="text-link" to="/">Return home</Link></Container></main>; }

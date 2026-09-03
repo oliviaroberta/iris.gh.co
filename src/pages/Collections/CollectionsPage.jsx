@@ -1,0 +1,2 @@
+import Container from '../../components/common/Container'; import CollectionGrid from '../../components/collection/CollectionGrid'; import SectionHeading from '../../components/common/SectionHeading'; import { collections } from '../../data/collections';
+export default function CollectionsPage() { return <section className="page-section"><Container><SectionHeading eyebrow="Collections" title="Signature drops and seasonal edits." description="Explore the lines that shape the IRIS wardrobe." /><CollectionGrid collections={collections} /></Container></section>; }

@@ -1304,17 +1304,17 @@ button:disabled {
 }
 
 .home-page__benefits.is-visible .brand-values article,
-.home-page__collections.is-visible .collection-card {
+  .home-page__collections.is-visible .collection-card {
   animation: home-item-in 550ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .home-page__benefits.is-visible .brand-values article:nth-child(2),
-.home-page__collections.is-visible .collection-card:nth-child(2) {
+  .home-page__collections.is-visible .collection-card:nth-child(2) {
   animation-delay: 90ms;
 }
 
 .home-page__benefits.is-visible .brand-values article:nth-child(3),
-.home-page__collections.is-visible .collection-card:nth-child(3) {
+  .home-page__collections.is-visible .collection-card:nth-child(3) {
   animation-delay: 180ms;
 }
 

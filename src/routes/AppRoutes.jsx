@@ -1,4 +1,14 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
+import WaitlistPage from '../pages/Waitlist/WaitlistPage';
 import HomePage from '../pages/Home/HomePage'; import ShopPage from '../pages/Shop/ShopPage'; import ProductPage from '../pages/Product/ProductPage'; import CollectionsPage from '../pages/Collections/CollectionsPage'; import CollectionPage from '../pages/Collections/CollectionPage'; import StoryPage from '../pages/Story/StoryPage'; import LookbookPage from '../pages/Lookbook/LookbookPage'; import SizeGuidePage from '../pages/SizeGuide/SizeGuidePage'; import ContactPage from '../pages/Contact/ContactPage'; import CartPage from '../pages/Cart/CartPage'; import NotFoundPage from '../pages/NotFound/NotFoundPage';
-export default function AppRoutes() { return <Routes><Route element={<MainLayout />}><Route path="/" element={<HomePage />} /><Route path="/shop" element={<ShopPage />} /><Route path="/shop/:productSlug" element={<ProductPage />} /><Route path="/collections" element={<CollectionsPage />} /><Route path="/collections/:collectionSlug" element={<CollectionPage />} /><Route path="/our-story" element={<StoryPage />} /><Route path="/lookbook" element={<LookbookPage />} /><Route path="/size-guide" element={<SizeGuidePage />} /><Route path="/contact" element={<ContactPage />} /><Route path="/cart" element={<CartPage />} /></Route><Route path="*" element={<NotFoundPage />} /></Routes>; }
+
+const prelaunchMode = import.meta.env.VITE_PRELAUNCH_MODE === 'true';
+
+export default function AppRoutes() {
+  if (prelaunchMode) {
+    return <Routes><Route path="/" element={<WaitlistPage />} /><Route path="/waitlist" element={<WaitlistPage />} /><Route path="*" element={<Navigate to="/waitlist" replace />} /></Routes>;
+  }
+
+  return <Routes><Route path="/waitlist" element={<WaitlistPage />} /><Route element={<MainLayout />}><Route path="/" element={<HomePage />} /><Route path="/shop" element={<ShopPage />} /><Route path="/shop/:productSlug" element={<ProductPage />} /><Route path="/collections" element={<CollectionsPage />} /><Route path="/collections/:collectionSlug" element={<CollectionPage />} /><Route path="/our-story" element={<StoryPage />} /><Route path="/lookbook" element={<LookbookPage />} /><Route path="/size-guide" element={<SizeGuidePage />} /><Route path="/contact" element={<ContactPage />} /><Route path="/cart" element={<CartPage />} /></Route><Route path="*" element={<NotFoundPage />} /></Routes>;
+}

@@ -108,8 +108,9 @@
 .waitlist-success button { background: var(--wl-olive); border: 1px solid var(--wl-olive); color: var(--wl-cream); margin-top: 2rem; }
 .waitlist-success__mark { font-size: 2rem; }
 .waitlist-footer { align-items: center; background: var(--wl-olive); border-top: 1px solid rgb(243 234 220 / 20%); color: var(--wl-cream); display: flex; justify-content: space-between; min-height: 9rem; padding: 2rem max(1.25rem, calc((100vw - 76rem) / 2)); position: relative; z-index: 1; }
-.waitlist-footer__logo { display: block; width: 7.5rem; }
+.waitlist-footer__logo { align-items: center; display: flex; flex-direction: column; gap: .45rem; width: 7.5rem; }
 .waitlist-footer__logo img { filter: brightness(0) invert(1); height: auto; opacity: .94; width: 100%; }
+.waitlist-footer__logo span { color: inherit; font-size: .6rem; font-weight: 600; letter-spacing: .14em; line-height: 1.3; text-align: center; text-transform: uppercase; white-space: nowrap; }
 .waitlist-footer p { font-size: .9rem; line-height: 1.5; }
 
 @keyframes waitlist-step-in { from { opacity: 0; transform: translateX(.6rem); } to { opacity: 1; transform: none; } }

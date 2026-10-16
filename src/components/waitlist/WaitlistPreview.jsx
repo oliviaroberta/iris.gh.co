@@ -16,7 +16,7 @@ export default function WaitlistPreview() {
       <div className="waitlist-section-heading">
         <p className="waitlist-kicker">Introducing Our First Collection</p>
         <h2 id="preview-title">Heritage Denim Edition</h2>
-        <p className="waitlist-season">SS26 Collection</p>
+        <p className="waitlist-season">Drop 1</p>
         <p>A first look at our wide-leg jeans, designed with African print details that bring something special to your everyday style.</p>
       </div>
       <div className="waitlist-preview__grid">

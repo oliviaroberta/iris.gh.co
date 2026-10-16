@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import logoMark from '../../assets/images/branding/iris-logo-mark.jpeg';
+import logoMark from '../../assets/images/branding/iris-logo-primary.png';
 import AnnouncementBar from './AnnouncementBar';
 import Header from './Header';
 import Footer from './Footer';

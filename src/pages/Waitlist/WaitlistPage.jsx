@@ -42,7 +42,7 @@ export default function WaitlistPage() {
         </section>
       </main>
       <footer className="waitlist-footer">
-        <a className="waitlist-footer__logo" href="#top" aria-label="IRIS — back to top"><img src={irisLogo} alt="IRIS — Rooted in Culture" /></a>
+        <a className="waitlist-footer__logo" href="#top" aria-label="IRIS — back to top"><img src={irisLogo} alt="IRIS" /><span>Rooted in Culture</span></a>
         <p>© 2026 IRIS. All rights reserved.</p>
       </footer>
     </div>

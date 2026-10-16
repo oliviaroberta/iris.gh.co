@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { submitWaitlistEntry } from '../../services/waitlist';
 
 const questions = [
@@ -103,7 +104,7 @@ export default function WaitlistForm({ onSuccess }) {
               <p>One last thing before we add you to the IRIS waitlist.</p>
               <div className="waitlist-consent">
                 <label><input name="consent" type="checkbox" checked={form.consent} onChange={update} required /><span className="waitlist-checkbox" aria-hidden="true" /><span>I agree to receive updates about IRIS collections, launches and early access. <b>*</b></span></label>
-                <p>Your information will be used to manage the waitlist, understand customer preferences and send launch updates. {/* TODO: Replace with the approved privacy-policy URL before launch. */}<span className="waitlist-policy">Privacy Policy coming soon.</span></p>
+                <p>Your information will be used to manage the waitlist, understand customer preferences and send launch updates. <Link className="waitlist-policy" to="/privacy-policy">Privacy Policy</Link>.</p>
               </div>
               </div>
             </div>

@@ -1,0 +1,24 @@
+.privacy-page { background: var(--color-champagne-light); color: var(--color-text); font-family: var(--font-body); min-height: 100vh; }
+.privacy-header { align-items: center; background: var(--color-olive-dark); display: flex; justify-content: space-between; min-height: 6rem; padding: 1rem max(1.25rem, calc((100vw - 70rem) / 2)); }
+.privacy-header img { filter: brightness(0) invert(1); height: auto; width: 4.5rem; }
+.privacy-back { border-bottom: 1px solid rgb(243 234 220 / 55%); color: var(--color-champagne-light); font-size: .85rem; font-weight: 600; letter-spacing: .08em; padding-bottom: .2rem; text-transform: uppercase; }
+.privacy-content { margin: 0 auto; max-width: 52rem; padding: clamp(3rem, 7vw, 6rem) 1.25rem; }
+.privacy-eyebrow { color: var(--color-brown); font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.privacy-content h1 { color: var(--color-olive-dark); font-family: var(--font-display); font-size: clamp(2.7rem, 7vw, 5rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.05; margin: .6rem 0 1rem; }
+.privacy-date { border-bottom: 1px solid var(--color-border); color: var(--color-muted); line-height: 1.7; margin-bottom: 3rem; padding-bottom: 2rem; }
+.privacy-content section { margin-top: 2.7rem; }
+.privacy-content h2 { color: var(--color-olive-dark); font-family: var(--font-body); font-size: clamp(1.3rem, 3vw, 1.65rem); font-weight: 700; line-height: 1.3; margin-bottom: .9rem; }
+.privacy-content h3 { color: var(--color-olive-dark); font-size: 1.05rem; font-weight: 700; margin: 1.5rem 0 .5rem; }
+.privacy-content p, .privacy-content li, .privacy-content address { font-size: 1rem; line-height: 1.75; }
+.privacy-content p + p { margin-top: .8rem; }
+.privacy-content ul { margin: 1rem 0 1.2rem; padding-left: 1.4rem; }
+.privacy-content li + li { margin-top: .5rem; }
+.privacy-content a { color: var(--color-olive-dark); font-weight: 600; text-decoration: underline; text-underline-offset: .18em; }
+.privacy-content address { font-style: normal; margin: 1rem 0; }
+.privacy-signoff { border-top: 1px solid var(--color-border); color: var(--color-olive-dark); font-weight: 700; margin-top: 3.5rem; padding-top: 2rem; }
+
+@media (max-width: 600px) {
+  .privacy-header { min-height: 5rem; }
+  .privacy-header img { width: 3.75rem; }
+  .privacy-content { padding-top: 2.5rem; }
+}

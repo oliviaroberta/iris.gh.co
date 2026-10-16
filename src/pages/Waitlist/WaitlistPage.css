@@ -111,6 +111,11 @@
 .waitlist-footer__logo { align-items: center; display: flex; flex-direction: column; gap: .45rem; width: 7.5rem; }
 .waitlist-footer__logo img { filter: brightness(0) invert(1); height: auto; opacity: .94; width: 100%; }
 .waitlist-footer__logo span { color: inherit; font-size: .6rem; font-weight: 600; letter-spacing: .14em; line-height: 1.3; text-align: center; text-transform: uppercase; white-space: nowrap; }
+.waitlist-footer__contact { align-items: center; display: flex; flex-direction: column; font-style: normal; gap: .2rem; text-align: center; }
+.waitlist-footer__contact strong { font-size: .72rem; letter-spacing: .12em; margin-bottom: .2rem; text-transform: uppercase; }
+.waitlist-footer__contact a { border: 1px solid transparent; color: inherit; font-size: .9rem; line-height: 1.45; padding: .12rem .45rem; text-decoration: underline; text-decoration-color: rgb(243 234 220 / 45%); text-underline-offset: .18em; transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease; }
+.waitlist-footer__contact a:hover, .waitlist-footer__contact a:focus-visible { background: var(--wl-cream); border-color: var(--wl-cream); color: var(--wl-olive); outline: 0; text-decoration-color: transparent; transform: translateY(-1px); }
+.waitlist-footer__contact small { color: rgb(243 234 220 / 78%); font-size: .78rem; line-height: 1.45; margin-top: .3rem; }
 .waitlist-footer p { font-size: .9rem; line-height: 1.5; }
 
 @keyframes waitlist-step-in { from { opacity: 0; transform: translateX(.6rem); } to { opacity: 1; transform: none; } }
@@ -141,8 +146,9 @@
   .waitlist-question-pair { gap: 2rem; }
   .waitlist-question--compact .waitlist-options { grid-template-columns: repeat(2, 1fr); }
   .waitlist-footer { align-items: center; flex-direction: column; gap: 1.15rem; justify-content: center; min-height: 12rem; padding-bottom: 2.5rem; padding-top: 2.5rem; text-align: center; }
-  .waitlist-footer__logo { width: 7rem; }
-  .waitlist-footer p { border-top: 1px solid rgb(243 234 220 / 18%); padding-top: 1rem; width: min(15rem, 100%); }
+  .waitlist-footer__logo { order: 1; width: 7rem; }
+  .waitlist-footer > p { order: 2; width: min(15rem, 100%); }
+  .waitlist-footer__contact { border-top: 1px solid rgb(243 234 220 / 18%); order: 3; padding-top: 1.25rem; width: min(18rem, 100%); }
 }
 
 @media (min-width: 531px) and (max-width: 1366px) {

@@ -1,7 +1,17 @@
 
+@import '@fontsource/dm-sans/latin-400.css';
+@import '@fontsource/dm-sans/latin-500.css';
+@import '@fontsource/dm-sans/latin-600.css';
+@import '@fontsource/dm-sans/latin-700.css';
+@import '@fontsource/playfair-display/latin-500.css';
+@import '@fontsource/playfair-display/latin-600.css';
+@import '@fontsource/playfair-display/latin-400-italic.css';
+
 :root {
   --font-display: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
   --font-body: 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-waitlist-display: 'Playfair Display', Georgia, serif;
+  --font-waitlist-body: 'DM Sans', 'Segoe UI', sans-serif;
 }
 
 body {

@@ -1,14 +1,8 @@
 export async function submitWaitlistEntry(payload) {
-  const endpoint = import.meta.env.VITE_WAITLIST_ENDPOINT?.trim();
-
-  if (!endpoint) {
-    throw new Error('The waitlist is temporarily unavailable. Please check back soon.');
-  }
-
   let response;
 
   try {
-    response = await fetch(endpoint, {
+    response = await fetch('/api/waitlist', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
@@ -17,9 +11,16 @@ export async function submitWaitlistEntry(payload) {
     throw new Error('We could not reach the waitlist. Please check your connection and try again.');
   }
 
-  if (!response.ok) {
-    throw new Error('We could not add you to the waitlist. Please try again in a moment.');
+  let result;
+  try {
+    result = await response.json();
+  } catch {
+    throw new Error('The waitlist returned an unexpected response. Please try again in a moment.');
   }
 
-  return response;
+  if (!response.ok || result?.success !== true) {
+    throw new Error(result?.error || 'We could not add you to the waitlist. Please try again in a moment.');
+  }
+
+  return result;
 }

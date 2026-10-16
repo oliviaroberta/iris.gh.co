@@ -12,7 +12,10 @@ export default function WaitlistHero() {
         <div className="waitlist-hero__message">
           <span className="waitlist-rule" aria-hidden="true" />
           <h1><span>Your IRIS era</span><em>starts here.</em></h1>
-          <p>Contemporary denim, rooted in African culture.<br />Be among the first to discover our debut collection.</p>
+          <div className="waitlist-hero__description">
+            <p>Discover IRIS, a women's denim brand that brings African culture into everyday fashion.</p>
+            <p>We're creating stylish, comfortable jeans with beautiful African print details. Be among the first to see our debut collection.</p>
+          </div>
           <button type="button" onClick={scrollToForm}>Join the waitlist <span aria-hidden="true">↓</span></button>
         </div>
       </div>
